@@ -99,64 +99,82 @@ This section demonstrates a similarity search using the Chroma vector store with
 ### 9. Initializing Replicate Language Model
 ```python
 from langchain.
+Certainly! Below is the modified text for your GitHub README file:
 
-***To run the code***, follow these steps:
+```
+# BigBasket QueryAgent
 
-Download the CSV file containing the data you want to use for conversational search and question answering. 
+To run the code, follow these steps:
 
-Set the Replicate API token:
-Set the Replicate API token as an environment variable. You can obtain your API token from your Replicate account settings.
+1. **Download the Data:**
+   Download the CSV file containing the data you want to use for conversational search and question answering.
 
-(REPLICATE_API_TOKEN=r8_SG8aoSUQkMOP91vcxYbd00YLv64rHMg1En6Qy)
+2. **Set the Replicate API Token:**
+   Set the Replicate API token as an environment variable. You can obtain your API token from your Replicate account settings.
 
-Run the code:
-Run the code using a Python interpreter. The code will perform conversational searches and answer questions based on the provided data.
+   (REPLICATE_API_TOKEN=r8_SG8aoSUQkMOP91vcxYbd00YLv64rHMg1En6Qy)
 
-This code will continuously prompt the user for input and provide answers based on the user's queries. The qa function is responsible for generating answers using the Replicate language model and the Chroma vector store.
+3. **Run the Code:**
+   Run the code using a Python interpreter. The code will perform conversational searches and answer questions based on the provided data.
 
-**Results-**
-(i) Result 1:
+   This code will continuously prompt the user for input and provide answers based on the user's queries. The `qa` function is responsible for generating answers using the Replicate language model and the Chroma vector store.
+
+## Results
+
+### Result 1:
+
+```
 ---------------------------------------------------------------------------------
 Welcome to the BigBasket QueryAgent. You are now ready to start looking for the products you actually need
 ---------------------------------------------------------------------------------
 Prompt: suggest some spicy eatables
-Answer:  Based on the given options, I would suggest going for the "Kashmiri Chilli Powder/Menasina Pudi" by Orika. This product has a rating of 4.4 out of 5 stars and is priced at Rs. 42, which is quite reasonable considering its quality and effectiveness.
+Answer: Based on the given options, I would suggest going for the "Kashmiri Chilli Powder/Menasina Pudi" by Orika. This product has a rating of 4.4 out of 5 stars and is priced at Rs. 42, which is quite reasonable considering its quality and effectiveness.
 
 The perks of using this product include:
 
 1. Adds a vibrant red color to dishes: Unlike regular red chili powders, Kashmiri chili powder imparts a deep red color to food, making it visually
----------------------------------------------------------------------------
+```
 
-(ii) Result 2:
+### Result 2:
+
+```
 ---------------------------------------------------------------------------------
 Welcome to the BigBasket QueryAgent. You are now ready to start looking for the products you actually need
 ---------------------------------------------------------------------------------
 Prompt: my hairs are getting thinner, suggest a good shampoo
-Answer:  Based on your query, I would suggest going for the "Sunsilk Long & Healthy Growth Shampoo" among the given options. This shampoo has been co-created with Dr. Francesca Fusco, a scalp expert from New York, and comes with an exclusive formula that deeply nourishes the hair from root to tip, keeping it healthy as it grows. The shampoo also contains biotin, which helps reduce hair breakage, making it ideal for people struggling with thinning hair.
+Answer: Based on your query, I would suggest going for the "Sunsilk Long & Healthy Growth Shampoo" among the given options. This shampoo has been co-created with Dr. Francesca Fusco, a scalp expert from New York, and comes with an exclusive formula that deeply nourishes the hair from root to tip, keeping it healthy as it grows. The shampoo also contains biotin, which helps reduce hair breakage, making it ideal for people struggling with thinning hair.
+```
 
-(iii) Result 3:
+### Result 3:
+
+```
 ---------------------------------------------------------------------------------
 Welcome to the BigBasket QueryAgent. You are now ready to start looking for the products you actually need
 ---------------------------------------------------------------------------------
 Prompt: Suggest a non-fictional novel
-Answer:  Based on your input, I would suggest the following non-fictional novel:
+Answer: Based on your input, I would suggest the following non-fictional novel:
 
 "The Immortal Life of Henrietta Lacks" by Rebecca Skloot
 
 This book tells the story of Henrietta Lacks, a poor black tobacco farmer whose cancer cells were taken without her knowledge or consent and led to numerous scientific breakthroughs. The book raises important questions about medical ethics, race, and the intersection of science and society. It has received critical acclaim and won several awards, including the National Book Award for Nonfiction.
+```
 
-(iv) Result 4:
+### Result 4:
+
+```
 ---------------------------------------------------------------------------------
 Welcome to the BigBasket QueryAgent. You are now ready to start looking for the products you actually need
 ---------------------------------------------------------------------------------
 Prompt: I am pursuing vegan diet, Suggest snacks
-Answer:  Based on your preference for vegan snacks, I would recommend the "Roasted High Protein Mixture" by GoodDiet. It's a tasty and healthy snack option that combines the goodness of grams, lentils, soya nuts, and roasted chole, making it a great source of protein, antioxidants, and fiber. With 100% oil-free and guilt-free, this snack serves well to keep you full and energized throughout the day. Plus, it's free from preservatives and is
+Answer: Based on your preference for vegan snacks, I would recommend the "Roasted High Protein Mixture" by GoodDiet. It's a tasty and healthy snack option that combines the goodness of grams, lentils, soya nuts, and roasted chole, making it a great source of protein, antioxidants, and fiber. With 100% oil-free and guilt-free, this snack serves well to keep you full and energized throughout the day. Plus, it's free from preservatives and is
+```
 
-(v) Result 5:
+### Result 5:
+
+```
 ---------------------------------------------------------------------------------
 Welcome to the BigBasket QueryAgent. You are now ready to start looking for the products you actually need
 ---------------------------------------------------------------------------------
 Prompt: q
-*** Tank you for visiting Big Basket ***
-
-
+*** Thank you for visiting Big Basket ***
+```
